@@ -1,0 +1,36 @@
+{
+  "intents": [
+    {
+      "intent": "TellLocation"
+    },
+    {
+      "intent": "TellItemToOrder",
+      "slots": [
+        {
+          "name": "Item"
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "TellHowMany",
+      "slots": [
+        {
+          "name": "How Many"
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "TellSauce"
+    }
+      "slots": [
+        {
+          "name": "location"
+          "type":
+        }
+
+      ]
+    ]
+  }
+  }

@@ -1,0 +1,7 @@
+PlaceOrder  order BWWs
+PlaceOrder  order Buffalo Wild Wings
+
+TellLocation    Yes
+
+TellItemToOrder {Item}
+TellItemToOrder Order {Item}
