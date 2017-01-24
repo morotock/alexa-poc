@@ -119,7 +119,23 @@ public class BWWSkill extends SpeechletServlet implements Speechlet {
     }
 
     private SpeechletResponse handleTellSauceIntent(Session session) {
-        return null;
+        String speech = "What sauce?";
+        String repromptText = "Tell me what sauce you would like.?";
+
+        final SpeechletResponse response = new SpeechletResponse();
+        final PlainTextOutputSpeech outputSpeech = new PlainTextOutputSpeech();
+        final Reprompt reprompt = new Reprompt();
+        final PlainTextOutputSpeech repromptSpeech = new PlainTextOutputSpeech();
+
+        outputSpeech.setText(speech);
+        response.setOutputSpeech(outputSpeech);
+        repromptSpeech.setText(repromptText);
+        reprompt.setOutputSpeech(repromptSpeech);
+        response.setReprompt(reprompt);
+        response.setShouldEndSession(false);
+
+        session.setAttribute(SESSION_STAGE, SAUCE_STAGE);
+        return response;
     }
 
     private SpeechletResponse handleTellAnythingElseIntent(Session session) {

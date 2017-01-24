@@ -1,7 +1,12 @@
 PlaceOrder  order BWWs
 PlaceOrder  order Buffalo Wild Wings
+PlaceOrder  Order from Buffalo Wild Wings
 
 TellLocation    Yes
 
 TellItemToOrder {Item}
 TellItemToOrder Order {Item}
+
+TellHowMany {HowMany}
+
+TellSauce   Salt and Vinegar

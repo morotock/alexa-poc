@@ -7,7 +7,7 @@
       "intent": "TellItemToOrder",
       "slots": [
         {
-          "name": "Item"
+          "name": "Item",
           "type": "LIST_OF_ITEMS"
         }
       ]
@@ -16,21 +16,22 @@
       "intent": "TellHowMany",
       "slots": [
         {
-          "name": "How Many"
+          "name": "How Many",
           "type": "AMAZON.NUMBER"
         }
       ]
     },
     {
-      "intent": "TellSauce"
-    }
+      "intent": "TellSauce",
       "slots": [
         {
-          "name": "location"
-          "type":
+          "name": "TellSauce",
+          "type": "LIST_OF_SAUCES"
         }
-
       ]
+    },
+    {
+      "intent": "AnythingElse"
+    }
     ]
-  }
   }
